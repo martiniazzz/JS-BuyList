@@ -1,3 +1,312 @@
-h1 {
-    color: red;
+.bodyS{
+    background-color: rgba(64, 64, 63, 0.15);
 }
+.block{
+    width: 100%;
+    max-width: 890px;
+    margin: auto;
+}
+.block1{
+    width: 100%;
+    max-width: 550px;
+    height: 210px;
+    margin-right: 10px;
+}
+.block2 {
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    float: right;
+    margin-left: 10px;
+}
+.blocksStyle{
+    background: white;
+    display: inline-block;
+    padding: 0px;
+    border-style: solid;
+    border-color: rgba(169, 169, 169, 0.4);
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(125, 125, 125, 0.49);
+}
+.div1 {
+    height: 30px;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(169, 169, 169, 0.4);
+    border-bottom-width: 1px;
+}
+.addGoodInput{
+    width: 410px;
+    height: 25px;
+    font:bold 14px Comic Sans MS;
+    border-color: rgba(200, 208, 215, 0.29);
+    border-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.addGoodButton{
+    width: 110px;
+    height: 30px;
+    font:bold 14px Comic Sans MS;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border-color: cornflowerblue;
+    border-style: outset;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.div2 {
+    height: 30px;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(169, 169, 169, 0.4);
+    border-bottom-width: 1px;
+}
+.tomatoes{
+    display: inline-block;
+    margin-right: 140px;
+    text-decoration: line-through;
+    font-family: "Comic Sans MS";
+}
+.tomatoesNumber{
+    display: inline-block;
+    margin-right: 130px;
+    width: 15px;
+    height: 15px;
+    background: rgba(169, 169, 169, 0.33);
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: rgba(169, 169, 169, 0.49);
+    border-width: 1px;
+    border-radius: 5px;
+}
+.tomatoesNotBougth{
+    margin-left: 40px;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    font-family:Comic Sans MS;
+    font-size: 12px;
+    background-color: rgba(64,64,64,0.11);
+    border-style: outset;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px rgba(125, 125, 125, 0.49);
+}
+.div3 {
+    height: 30px;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(169, 169, 169, 0.4);
+    border-bottom-width: 1px;
+}
+.cookies{
+    margin-right: 120px;
+    display: inline-block;
+    font-family: "Comic Sans MS";
+}
+.cookiesMinus{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 94, 84, 0.85);
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(255, 94, 84, 0.85);
+    border-width: 1px;
+    border-radius: 17px;
+    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
+}
+.cookiesNumber{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgba(169, 169, 169, 0.33);
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: rgba(169, 169, 169, 0.49);
+    border-width: 1px;
+    border-radius: 5px;
+}
+.cookiesPlus{
+    margin-right: 90px;
+    width: 35px;
+    height: 35px;
+    background: rgba(134, 255, 139, 0.85);
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(134, 255, 139, 0.85);
+    border-width: 1px;
+    border-radius: 17px;
+    box-shadow: 0px 3px 0px rgba(61, 136, 65, 0.49);
+}
+.cookiesBuy{
+    display: inline-block;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    font-family:Comic Sans MS;
+    font-size: 12px;
+    background-color: rgba(64,64,64,0.11);
+    border-style: outset;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px rgba(125, 125, 125, 0.49);
+}
+.cookiesX{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 94, 84, 0.85);
+    text-align: center;
+    border-style: outset;
+    border-color: rgba(255, 94, 84, 0.85);
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
+}
+.div4 {
+    height: 30px;
+    padding: 10px;
+}
+.cheese{
+    width: 120px;
+    height: 20px;
+    font-family: "Comic Sans MS";
+    display: inline-block;
+    margin-right: 57px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: aquamarine;
+    border-radius: 3px;
+}
+.cheeseMinus{
+    display: inline-block;
+    opacity: 0.6;
+    cursor: not-allowed;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 94, 84, 0.85);
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(255, 94, 84, 0.85);
+    border-width: 1px;
+    border-radius: 17px;
+    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
+}
+.cheeseNumber{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgba(169, 169, 169, 0.33);
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: rgba(169, 169, 169, 0.49);
+    border-width: 1px;
+    border-radius: 5px;
+}
+.cheesePlus{
+    margin-right: 90px;
+    width: 35px;
+    height: 35px;
+    background: rgba(134, 255, 139, 0.85);
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(134, 255, 139, 0.85);
+    border-width: 1px;
+    border-radius: 17px;
+    box-shadow: 0px 3px 0px rgba(61, 136, 65, 0.49);
+}
+.cheeseBuy{
+    display: inline-block;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    font-family:Comic Sans MS;
+    font-size: 12px;
+    background-color: rgba(64,64,64,0.11);
+    border-style: outset;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px rgba(125, 125, 125, 0.49);
+}
+.cheeseX{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 94, 84, 0.85);
+    text-align: center;
+    border-style: outset;
+    border-color: rgba(255, 94, 84, 0.85);
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
+}
+.div5{
+    height: 35px;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(169, 169, 169, 0.4);
+    border-bottom-width: 1px;
+    font:bold 20px Comic Sans MS;
+}
+.div6{
+    height: 35px;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(169, 169, 169, 0.4);
+    border-bottom-width: 1px;
+}
+.left{
+    display: inline-block;
+    height: 20px;
+    background: rgba(169, 169, 169, 0.33);
+    padding: 2px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: rgba(169, 169, 169, 0.49);
+    border-width: 1px;
+    border-radius: 5px;
+    font-family: "Comic Sans MS";
+}
+.cookiesLeft{
+    width: 80px;
+}
+.cheeseLeft{
+    width: 60px;
+}
+.text{
+    display: inline-block;
+    font-size: 12px;
+}
+.number{
+    display: inline-block;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    background: rgba(228, 180, 54, 0.8);
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-style: solid;
+    border-color: rgba(228, 180, 54, 0.8);
+    border-width: 1px;
+    border-radius: 50%;
+}
+.div7{
+    height: 35px;
+    padding: 10px;
+}
+.tomatoesLeft{
+    width: 100px;
+}
+.crossed{
+    text-decoration: line-through;
+}
+
