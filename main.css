@@ -4,17 +4,20 @@
 .block{
     width: 100%;
     max-width: 890px;
+    min-width: 890px;
     margin: auto;
 }
 .block1{
     width: 100%;
     max-width: 550px;
+    min-width: 550px;
     height: 210px;
     margin-right: 10px;
 }
 .block2 {
     width: 100%;
     max-width: 300px;
+    min-width: 300px;
     height: 220px;
     float: right;
     margin-left: 10px;
@@ -173,16 +176,9 @@
     padding: 10px;
 }
 .cheese{
-    width: 120px;
-    height: 20px;
     font-family: "Comic Sans MS";
     display: inline-block;
-    margin-right: 57px;
-    display: inline-block;
-    border-style: solid;
-    border-width: 1px;
-    border-color: aquamarine;
-    border-radius: 3px;
+    margin-right: 150px;
 }
 .cheeseMinus{
     display: inline-block;
