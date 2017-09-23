@@ -5,76 +5,110 @@
     <title>BuyList</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
-<body class="bodyS">
-<div class="block">
-    <div class="block1 blocksStyle">
-        <div class="div1">
-            <div class="div11">
-                <input class="addGoodInput" type="text">
-                <button class="addGoodButton">Додати</button>
+<body class="body">
+    <div class="container">
+        <div class="left-block">
+            <div class="in-left-block block-style">
+                <div class="add-item">
+                    <input type="text" class="add-item-input">
+                    <button class="add-item-button" data-tooltip="Додати товар">Додати</button>
+                </div>
+                <div class="item">
+                    <div class="item-name">
+                        Помідори
+                    </div>
+                    <div class="item-amount">
+                        <button class="button-minus" data-tooltip="Зменшити">-</button>
+                        <div class="item-number">
+                            2
+                        </div>
+                        <button class="button-plus" data-tooltip="Збільшити">+</button>
+                    </div>
+                    <div class="item-buy">
+                        <button class="button-buy " data-tooltip="Купити">Куплено</button>
+                        <button class="button-delete" data-tooltip="Видалити">x</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-name">
+                        Печиво
+                    </div>
+                    <div class="item-amount">
+                        <button class="button-minus" data-tooltip="Зменшити">-</button>
+                        <div class="item-number">
+                            2
+                        </div>
+                        <button class="button-plus" data-tooltip="Збільшити">+</button>
+                    </div>
+                    <div class="item-buy">
+                        <button class="button-buy" data-tooltip="Купити">Куплено</button>
+                        <button class="button-delete" data-tooltip="Видалити">x</button>
+                    </div>
+                </div>
+                <div class="item last-item">
+                    <div class="item-name">
+                        Сир
+                    </div>
+                    <div class="item-amount">
+                        <button class="button-minus" data-tooltip="Зменшити">-</button>
+                        <div class="item-number">
+                            2
+                        </div>
+                        <button class="button-plus" data-tooltip="Збільшити">+</button>
+                    </div>
+                    <div class="item-buy">
+                        <button class="button-buy" data-tooltip="Купити">Куплено</button>
+                        <button class="button-delete" data-tooltip="Видалити">x</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="div2">
-            <div class="tomatoes">Помідори</div>
-            <button class="tomatoesMinus">-</button>
-            <div class="tomatoesNumber">1</div>
-            <button class="tomatoesPlus">+</button>
-            <button class="tomatoesBuy">Куплено</button>
-            <button class="tomatoesX">x</button>
-        </div>
-        <div class="div3">
-            <div class="cookies">Печиво</div>
-            <button class="cookiesMinus">-</button>
-            <div class="cookiesNumber">1</div>
-            <button class="cookiesPlus">+</button>
-            <button class="cookiesBuy">Куплено</button>
-            <button class="cookiesX">x</button>
-        </div>
-        <div class="div4">
-            <div class="cheese">Сир</div>
-            <button class="cheeseMinus">-</button>
-            <div class="cheeseNumber">1</div>
-            <button class="cheesePlus">+</button>
-            <button class="cheeseBuy">Куплено</button>
-            <button class="cheeseX">x</button>
+        <div class="right-block">
+            <div class="in-right-block block-style">
+                <div class="about-head">
+                    Залишилося
+                </div>
+                <div class="about-left">
+                    <div class="item-left">
+                        <div class="item-left-text">
+                            Помідори
+                        </div>
+                        <div class="item-left-number">
+                            2
+                        </div>
+                    </div>
+                    <div class="item-left">
+                        <div class="item-left-text">
+                            Печиво
+                        </div>
+                        <div class="item-left-number">
+                            2
+                        </div>
+                    </div>
+                    <div class="item-left">
+                        <div class="item-left-text">
+                            Сир
+                        </div>
+                        <div class="item-left-number">
+                            2
+                        </div>
+                    </div>
+                </div>
+                <div class="about-head">
+                    Куплено
+                </div>
+                <div class="about-left about-left-last">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="block2 blocksStyle">
-        <div class="div5">
-                Залишилося
+    <div class="badge">
+        <div class="badge-lable">
+            Buy List
         </div>
-        <div class="div6">
-            <div class="left tomatoesLeft">
-                <div class="text">
-                    Помідори
-                </div>
-                <div class="number">
-                    1
-                </div>
-            </div>
-            <div class="left cookiesLeft">
-                <div class="text">
-                    Печиво
-                </div>
-                <div class="number">
-                    1
-                </div>
-            </div>
-            <div class="left cheeseLeft">
-                <div class="text">
-                    Сир
-                </div>
-                <div class="number">
-                    1
-                </div>
-            </div>
-        </div>
-        <div class="div5">
-            Куплено
-        </div>
-        <div class="div7">
+        <div class="badge-author">
+            Created buy: Marta Babelska
         </div>
     </div>
-</div>
 </body>
 </html>

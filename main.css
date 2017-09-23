@@ -1,60 +1,58 @@
-.bodyS{
+.body{
     background-color: rgba(64, 64, 63, 0.15);
 }
-.block{
-    width: 100%;
-    max-width: 890px;
-    min-width: 890px;
-    margin: auto;
-}
-.block1{
-    width: 100%;
-    max-width: 550px;
-    min-width: 550px;
-    height: 210px;
-    margin-right: 10px;
-}
-.block2 {
-    width: 100%;
-    max-width: 300px;
-    min-width: 300px;
-    height: 255px;
-    float: right;
-    margin-left: 10px;
-}
-.blocksStyle{
+.block-style{
     background: white;
-    display: inline-block;
-    padding: 0px;
-    border-style: solid;
-    border-color: rgba(169, 169, 169, 0.4);
-    border-width: 2px;
+    border: 1px solid #a9a9a9;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(125, 125, 125, 0.49);
 }
-.div1 {
-    height: 30px;
-    padding: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(169, 169, 169, 0.4);
-    border-bottom-width: 1px;
+.container{
+    width: 100%;
+    max-width: 900px;
+    padding-top:10px;
+    margin: auto;
 }
-.div11{
+.left-block{
+    width: 60%;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+}
+.right-block{
+    width: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.in-left-block{
+    margin-right: 5px;
+}
+.in-right-block{
+    margin-left: 5px;
+}
+.add-item{
     display:flex;
+    border-bottom: 1px solid #dddddd;
 }
-.addGoodInput{
-    width: 410px;
-    height: 25px;
+.add-item-input{
+    width: 70%;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-right: 0;
     font:bold 14px Comic Sans MS;
     border-color: rgba(200, 208, 215, 0.29);
     border-width: 1px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.addGoodButton{
-    width: 110px;
-    height: 30px;
+.add-item-button{
+    width: 30%;
+    height: 35px;
+    margin: 10px;
+    margin-left: 0;
     font:bold 14px Comic Sans MS;
+    box-sizing: border-box;
     background-color: cornflowerblue;
     color: aliceblue;
     border-color: cornflowerblue;
@@ -62,282 +60,223 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.div2 {
-    height: 30px;
-    padding: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(169, 169, 169, 0.4);
-    border-bottom-width: 1px;
+.item{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dddddd;
 }
-.tomatoes{
-    display: inline-block;
-    margin-right: 100px;
+.last-item{
+    border-bottom: 0;
+}
+.item-name{
+    display: inline-flex;
+    width: 33%;
+    margin: 15px;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS";
+    text-align: start;
+}
+.item-amount{
+    display: inline-flex;
+    width: 33%;
+    margin: 10px;
+    box-sizing: border-box;
     font-family: "Comic Sans MS";
 }
-.tomatoesMinus{
+.button-minus{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    box-sizing: border-box;
+    background: rgba(255, 94, 84, 0.96);
+    color: white;
+    font-size: larger;
+    text-align: center;
+    border: 0;
+    border-radius: 17px;
+    box-shadow: 0px 3px 0px rgba(255, 94, 84, 0.49);
+}
+.item-number{
     display: inline-block;
     width: 35px;
     height: 35px;
-    background: rgba(255, 94, 84, 0.85);
-    text-align: center;
-    border-style: solid;
-    border-color: rgba(255, 94, 84, 0.85);
-    border-width: 1px;
-    border-radius: 17px;
-    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
-}
-.tomatoesNumber{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background: rgba(169, 169, 169, 0.33);
     padding: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-style: solid;
-    border-color: rgba(169, 169, 169, 0.49);
-    border-width: 1px;
+    margin: 2px;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgba(169, 169, 169, 0.33);
+    border: 0;
     border-radius: 5px;
 }
-.tomatoesPlus{
-    margin-right: 90px;
-    width: 35px;
-    height: 35px;
-    background: rgba(134, 255, 139, 0.85);
+.button-plus{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    box-sizing: border-box;
+    background: rgba(100, 187, 38, 0.96);
+    color: white;
+    font-size: larger;
     text-align: center;
-    border-style: solid;
-    border-color: rgba(134, 255, 139, 0.85);
-    border-width: 1px;
+    border: 0;
     border-radius: 17px;
-    box-shadow: 0px 3px 0px rgba(61, 136, 65, 0.49);
+    box-shadow: 0px 3px 0px rgba(68, 186, 58, 0.49);
 }
-.tomatoesBuy{
+.item-buy{
+    display: inline-flex;
+    width: 33%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.button-buy{
     display: inline-block;
     width: 100px;
     height: 35px;
-    font-family:Comic Sans MS;
+    margin: 1px;
     font-size: 12px;
+    text-align: center;
+    font-family: "Comic Sans MS";
     background-color: rgba(64,64,64,0.11);
     border-style: outset;
     border-radius: 5px;
     box-shadow: 0px 2px 0px rgba(125, 125, 125, 0.49);
 }
-.tomatoesX{
+.button-delete{
     display: inline-block;
     width: 35px;
     height: 35px;
-    background: rgba(255, 94, 84, 0.85);
+    margin: 1px;
+    background: rgba(255, 94, 84, 0.96);
     text-align: center;
-    border-style: outset;
-    border-color: rgba(255, 94, 84, 0.85);
-    border-width: 1px;
+    color: white;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    border:1px outset rgba(255, 94, 84, 0.96);
     border-radius: 5px;
-    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
+    box-shadow: 0px 3px 0px rgba(255, 94, 84, 0.49);
 }
-.div3 {
-    height: 30px;
+.about-head{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
     padding: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(169, 169, 169, 0.4);
-    border-bottom-width: 1px;
+    border-bottom: 1px solid #dddddd;
 }
-.cookies{
-    margin-right: 120px;
+.about-left{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+.about-left-last{
+    border-bottom: 0;
+}
+.item-left{
+    margin: 5px;
+    padding: 3px;
+    display: inline-flex;
+    background: #e8e8e8;
+    border-radius: 5px;
+}
+.item-left-text{
     display: inline-block;
+    padding: 3px;
+    font-size: x-small;
+    text-align: center;
     font-family: "Comic Sans MS";
 }
-.cookiesMinus{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: rgba(255, 94, 84, 0.85);
-    text-align: center;
-    border-style: solid;
-    border-color: rgba(255, 94, 84, 0.85);
-    border-width: 1px;
-    border-radius: 17px;
-    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
-}
-.cookiesNumber{
+.item-left-number{
     display: inline-block;
     width: 15px;
     height: 15px;
-    background: rgba(169, 169, 169, 0.33);
-    padding: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-style: solid;
-    border-color: rgba(169, 169, 169, 0.49);
-    border-width: 1px;
-    border-radius: 5px;
-}
-.cookiesPlus{
-    margin-right: 90px;
-    width: 35px;
-    height: 35px;
-    background: rgba(134, 255, 139, 0.85);
-    text-align: center;
-    border-style: solid;
-    border-color: rgba(134, 255, 139, 0.85);
-    border-width: 1px;
-    border-radius: 17px;
-    box-shadow: 0px 3px 0px rgba(61, 136, 65, 0.49);
-}
-.cookiesBuy{
-    display: inline-block;
-    display: inline-block;
-    width: 100px;
-    height: 35px;
-    font-family:Comic Sans MS;
-    font-size: 12px;
-    background-color: rgba(64,64,64,0.11);
-    border-style: outset;
-    border-radius: 5px;
-    box-shadow: 0px 2px 0px rgba(125, 125, 125, 0.49);
-}
-.cookiesX{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: rgba(255, 94, 84, 0.85);
-    text-align: center;
-    border-style: outset;
-    border-color: rgba(255, 94, 84, 0.85);
-    border-width: 1px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
-}
-.div4 {
-    height: 30px;
-    padding: 10px;
-}
-.cheese{
+    margin: 2px;
+    padding: 3px;
+    background: rgb(255, 185, 69);
+    font-weight: bold;
+    font-size: x-small;
     font-family: "Comic Sans MS";
-    display: inline-block;
-    margin-right: 152px;
-}
-.cheeseMinus{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: rgba(255, 94, 84, 0.85);
     text-align: center;
-    border-style: solid;
-    border-color: rgba(255, 94, 84, 0.85);
-    border-width: 1px;
-    border-radius: 17px;
-    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
-}
-.cheeseNumber{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background: rgba(169, 169, 169, 0.33);
-    padding: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-style: solid;
-    border-color: rgba(169, 169, 169, 0.49);
-    border-width: 1px;
-    border-radius: 5px;
-}
-.cheesePlus{
-    margin-right: 90px;
-    width: 35px;
-    height: 35px;
-    background: rgba(134, 255, 139, 0.85);
-    text-align: center;
-    border-style: solid;
-    border-color: rgba(134, 255, 139, 0.85);
-    border-width: 1px;
-    border-radius: 17px;
-    box-shadow: 0px 3px 0px rgba(61, 136, 65, 0.49);
-}
-.cheeseBuy{
-    display: inline-block;
-    display: inline-block;
-    width: 100px;
-    height: 35px;
-    font-family:Comic Sans MS;
-    font-size: 12px;
-    background-color: rgba(64,64,64,0.11);
-    border-style: outset;
-    border-radius: 5px;
-    box-shadow: 0px 2px 0px rgba(125, 125, 125, 0.49);
-}
-.cheeseX{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: rgba(255, 94, 84, 0.85);
-    text-align: center;
-    border-style: outset;
-    border-color: rgba(255, 94, 84, 0.85);
-    border-width: 1px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 0px rgba(186, 34, 27, 0.49);
-}
-.div5{
-    height: 35px;
-    padding: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(169, 169, 169, 0.4);
-    border-bottom-width: 1px;
-    font:bold 20px Comic Sans MS;
-}
-.div6{
-    height: 80px;
-    padding: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(169, 169, 169, 0.4);
-    border-bottom-width: 1px;
-}
-.left{
-    display: inline-block;
-    height: 20px;
-    background: rgba(169, 169, 169, 0.33);
-    padding: 2px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    margin: 3px;
-    border-style: solid;
-    border-color: rgba(169, 169, 169, 0.49);
-    border-width: 1px;
-    border-radius: 5px;
-    font-family: "Comic Sans MS";
-}
-.cookiesLeft{
-    width: 80px;
-}
-.cheeseLeft{
-    width: 60px;
-}
-.text{
-    display: inline-block;
-    font-size: 12px;
-}
-.number{
-    display: inline-block;
-    font-size: 10px;
-    width: 10px;
-    height: 10px;
-    background: rgba(228, 180, 54, 0.8);
-    padding: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-style: solid;
-    border-color: rgba(228, 180, 54, 0.8);
-    border-width: 1px;
+    color: white;
     border-radius: 50%;
 }
-.div7{
-    height: 35px;
+.badge{
+    position: fixed;
+    width: 130px;
+    height: 130px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: rgba(174, 0, 243, 0.82);
+    bottom: -80px;
+    left: 50px;
+    transition: all 1s ease;
+}
+.badge:hover{
+    background: #496eaf;
+    transform: translateY(-60px);
+}
+.badge-lable{
     padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Verdana";
 }
-.tomatoesLeft{
-    width: 100px;
+.badge-author{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Verdana";
 }
-.crossed{
-    text-decoration: line-through;
+@media print {
+    .badge .badge-lable{
+        display: none;
+    }
+    .badge {
+        background: white;
+        color: black;
+        border: 2px solid blueviolet;
+    }
+}
+@media	(max-width:	600px){
+    .container{
+        margin: 0;
+    }
+    .left-block{
+        width: 100%;
+        margin-left: 5px;
+    }
+    .right-block{
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
+button{
+    position: relative;
+}
+
+button::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 70px;
+    height: 15px;
+    padding: 5px;
+    top:-25px;
+    left:50%;
+    margin-left: -25px;
+    background: rgba(156, 49, 255, 0.67);
+    border-radius: 5px;
+    color: white;
+    font-size: x-small;
+    visibility: hidden;
+    transition: all 0.25s ease;
+}
+
+button:hover::after{
+    visibility: visible;
+    transform: translateY(-5px);
+}
