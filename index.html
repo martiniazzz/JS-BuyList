@@ -13,54 +13,27 @@
                     <input type="text" class="add-item-input">
                     <button class="add-item-button" data-tooltip="Додати товар">Додати</button>
                 </div>
-                <div class="item">
-                    <div class="item-name">
-                        Помідори
-                    </div>
-                    <div class="item-amount">
-                        <button class="button-minus" data-tooltip="Зменшити">-</button>
-                        <div class="item-number">
-                            2
+                <div class="item-row" style="display: none">
+                    <div class="item">
+                        <div class="item-name">
+                            Item
                         </div>
-                        <button class="button-plus" data-tooltip="Збільшити">+</button>
-                    </div>
-                    <div class="item-buy">
-                        <button class="button-buy " data-tooltip="Купити">Куплено</button>
-                        <button class="button-delete" data-tooltip="Видалити">x</button>
+                        <input type="text" class="edit-item" style="display: none">
+                        <div class="item-amount">
+                            <button class="button-minus" disabled=true data-tooltip="Зменшити">-</button>
+                            <div class="item-number">
+                                1
+                            </div>
+                            <button class="button-plus" data-tooltip="Збільшити">+</button>
+                        </div>
+                        <div class="item-buy">
+                            <button class="button-buy " data-tooltip="Купити">Куплено</button>
+                            <button class="button-delete" data-tooltip="Видалити">x</button>
+                            <button class="button-not-buy" style="display: none" data-tooltip="Відмінити">Не куплено</button>
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="item-name">
-                        Печиво
-                    </div>
-                    <div class="item-amount">
-                        <button class="button-minus" data-tooltip="Зменшити">-</button>
-                        <div class="item-number">
-                            2
-                        </div>
-                        <button class="button-plus" data-tooltip="Збільшити">+</button>
-                    </div>
-                    <div class="item-buy">
-                        <button class="button-buy" data-tooltip="Купити">Куплено</button>
-                        <button class="button-delete" data-tooltip="Видалити">x</button>
-                    </div>
-                </div>
-                <div class="item last-item">
-                    <div class="item-name">
-                        Сир
-                    </div>
-                    <div class="item-amount">
-                        <button class="button-minus" data-tooltip="Зменшити">-</button>
-                        <div class="item-number">
-                            2
-                        </div>
-                        <button class="button-plus" data-tooltip="Збільшити">+</button>
-                    </div>
-                    <div class="item-buy">
-                        <button class="button-buy" data-tooltip="Купити">Куплено</button>
-                        <button class="button-delete" data-tooltip="Видалити">x</button>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="right-block">
@@ -69,37 +42,25 @@
                     Залишилося
                 </div>
                 <div class="about-left">
-                    <div class="item-left">
-                        <div class="item-left-text">
-                            Помідори
-                        </div>
-                        <div class="item-left-number">
-                            2
-                        </div>
-                    </div>
-                    <div class="item-left">
-                        <div class="item-left-text">
-                            Печиво
-                        </div>
-                        <div class="item-left-number">
-                            2
-                        </div>
-                    </div>
-                    <div class="item-left">
-                        <div class="item-left-text">
-                            Сир
-                        </div>
-                        <div class="item-left-number">
-                            2
+                    <div class="item-left-box" style="display: none">
+                        <div class="item-left">
+                            <div class="item-left-text">
+                                Item
+                            </div>
+                            <div class="item-left-number">
+                                1
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-head">
                     Куплено
                 </div>
-                <div class="about-left about-left-last">
+                <div class="about-bought">
                 </div>
             </div>
+
+
         </div>
     </div>
     <div class="badge">
@@ -110,5 +71,8 @@
             Created buy: Marta Babelska
         </div>
     </div>
+
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

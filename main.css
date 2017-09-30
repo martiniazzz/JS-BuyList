@@ -14,13 +14,13 @@
     margin: auto;
 }
 .left-block{
-    width: 60%;
+    width: 66%;
     display: inline-block;
     box-sizing: border-box;
     float: left;
 }
 .right-block{
-    width: 40%;
+    width: 34%;
     display: inline-block;
     box-sizing: border-box;
 }
@@ -61,7 +61,7 @@
     border-bottom-right-radius: 5px;
 }
 .item{
-    display: flex;
+    display: inline-flex;
     width: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid #dddddd;
@@ -90,13 +90,16 @@
     height: 30px;
     margin: 2px;
     box-sizing: border-box;
-    background: rgba(255, 94, 84, 0.96);
+    background: rgba(255, 177, 162, 0.96);
     color: white;
     font-size: larger;
     text-align: center;
     border: 0;
     border-radius: 17px;
     box-shadow: 0px 3px 0px rgba(255, 94, 84, 0.49);
+}
+.button-minus-more{
+    background: rgba(255, 94, 84, 0.96);
 }
 .item-number{
     display: inline-block;
@@ -130,8 +133,22 @@
     margin: 10px;
     box-sizing: border-box;
 }
+.button-not-buy{
+    display: inline-flex;
+    width: 120px;
+    height: 35px;
+    margin: 1px;
+    margin-left: 30px;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    background-color: rgba(64,64,64,0.11);
+    border-style: outset;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px rgba(125, 125, 125, 0.49);
+}
 .button-buy{
-    display: inline-block;
+    display: inline-flex;
     width: 100px;
     height: 35px;
     margin: 1px;
@@ -144,7 +161,7 @@
     box-shadow: 0px 2px 0px rgba(125, 125, 125, 0.49);
 }
 .button-delete{
-    display: inline-block;
+    display: inline-flex;
     width: 35px;
     height: 35px;
     margin: 1px;
@@ -157,7 +174,16 @@
     border-radius: 5px;
     box-shadow: 0px 3px 0px rgba(255, 94, 84, 0.49);
 }
+.edit-item{
+    display: inline-flex;
+    width: 33%;
+    margin: 15px;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS";
+    text-align: start;
+}
 .about-head{
+    display: flex;
     font-weight: bold;
     font-size: 20px;
     font-family: "Comic Sans MS";
@@ -165,17 +191,19 @@
     border-bottom: 1px solid #dddddd;
 }
 .about-left{
-    display: flex;
+    display: block;
     padding: 10px;
     border-bottom: 1px solid #dddddd;
 }
-.about-left-last{
+.about-bought{
+    display: block;
+    padding: 10px;
     border-bottom: 0;
 }
 .item-left{
+    display: inline-block;
     margin: 5px;
     padding: 3px;
-    display: inline-flex;
     background: #e8e8e8;
     border-radius: 5px;
 }
@@ -280,3 +308,4 @@ button:hover::after{
     visibility: visible;
     transform: translateY(-5px);
 }
+
