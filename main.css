@@ -133,12 +133,15 @@
     margin: 10px;
     box-sizing: border-box;
 }
+.item-buy-hide{
+    width: 66%;
+}
 .button-not-buy{
     display: inline-flex;
     width: 120px;
     height: 35px;
-    margin: 1px;
-    margin-left: 30px;
+    margin: auto;
+    margin-right: 30px;
     font-size: 12px;
     text-align: center;
     font-family: "Comic Sans MS";
@@ -227,6 +230,9 @@
     text-align: center;
     color: white;
     border-radius: 50%;
+}
+.crossed{
+    text-decoration: line-through;
 }
 .badge{
     position: fixed;

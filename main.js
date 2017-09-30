@@ -74,7 +74,10 @@ $(function(){
         $node.find(".button-buy").click(function () {
             $node.find(".button-buy").hide();
             $node.find(".button-delete").hide();
+            $node.find(".item-amount").hide();
+            $node.find(".item-buy").addClass("item-buy-hide");
             $node.find(".button-not-buy").show();
+            $node.find(".item-name").addClass("crossed");
             $node_box_bought.show();
             $node_box_left.hide();
         });
@@ -82,7 +85,10 @@ $(function(){
         $node.find(".button-not-buy").click(function () {
             $node.find(".button-buy").show();
             $node.find(".button-delete").show();
+            $node.find(".item-amount").show();
+            $node.find(".item-buy").removeClass("item-buy-hide");
             $node.find(".button-not-buy").hide();
+            $node.find(".item-name").removeClass("crossed");
             $node_box_bought.hide();
             $node_box_left.show();
         });
