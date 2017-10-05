@@ -10,6 +10,9 @@ $(function(){
         var $node_box_left = $(ITEM_BOUGHT);
         var $node_box_bought = $(ITEM_BOUGHT);
 
+        $node_box_bought.find(".item-left-text").addClass("crossed");
+        $node_box_bought.find(".item-left-number").addClass("crossed");
+
         $node.find(".item-name").text(title);
         $node_box_left.find(".item-left-text").text(title);
         $node_box_bought.find(".item-left-text").text(title);
@@ -24,10 +27,12 @@ $(function(){
         $quantity_label_bought.text(quantity);
 
         $node.find(".item-name").click(function (){
-            $node.find(".item-name").hide();
-            $node.find(".edit-item").val(title);
-            $node.find(".edit-item").show();
-            $node.find(".edit-item").focus();
+            if(!$node.find(".item-name").hasClass("crossed")) {
+                $node.find(".item-name").hide();
+                $node.find(".edit-item").val(title);
+                $node.find(".edit-item").show();
+                $node.find(".edit-item").focus();
+            }
         });
 
         $node.find(".edit-item").focusout(function () {
@@ -74,8 +79,9 @@ $(function(){
         $node.find(".button-buy").click(function () {
             $node.find(".button-buy").hide();
             $node.find(".button-delete").hide();
-            $node.find(".item-amount").hide();
-            $node.find(".item-buy").addClass("item-buy-hide");
+            $node.find(".button-minus").hide();
+            $node.find(".button-plus").hide();
+            $node.find(".item-number").addClass("item-bought");
             $node.find(".button-not-buy").show();
             $node.find(".item-name").addClass("crossed");
             $node_box_bought.show();
@@ -85,7 +91,9 @@ $(function(){
         $node.find(".button-not-buy").click(function () {
             $node.find(".button-buy").show();
             $node.find(".button-delete").show();
-            $node.find(".item-amount").show();
+            $node.find(".button-minus").show();
+            $node.find(".button-plus").show();
+            $node.find(".item-number").removeClass("item-bought");
             $node.find(".item-buy").removeClass("item-buy-hide");
             $node.find(".button-not-buy").hide();
             $node.find(".item-name").removeClass("crossed");
